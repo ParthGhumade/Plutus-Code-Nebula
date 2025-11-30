@@ -12,15 +12,15 @@ from typing import List, Optional, Literal, Dict, Any
 from datetime import datetime, timedelta
 
 # ---------------------- API KEYS (from environment) ------------------------ #
-DEEPSEEK_API_KEY = os.environ.get("DEEPSEEK_API_KEY", "sk-685df22cc88b42b88fbdc48a1c8e4b80")
+DEEPSEEK_API_KEY = os.environ.get("DEEPSEEK_API_KEY", "ENTER YOUR API KEY HERE")
 DEEPSEEK_URL = os.environ.get("DEEPSEEK_URL", "https://api.deepseek.com/v1/chat/completions")
 
-ALPACA_API_KEY = os.environ.get("ALPACA_API_KEY", "PK24KQLZ7M6N2EKHQCZYX5ALRX")
-ALPACA_SECRET_KEY = os.environ.get("ALPACA_SECRET_KEY", "HHGLc4722WMg7oPPhWVtdycabpqBN6qw7g4XSr2zJjcZ")
+ALPACA_API_KEY = os.environ.get("ALPACA_API_KEY", "ENTER YOUR API KEY HERE")
+ALPACA_SECRET_KEY = os.environ.get("ALPACA_SECRET_KEY", "ENTER YOUR API KEY HERE")
 ALPACA_BASE_URL = os.environ.get("ALPACA_BASE_URL", "https://data.alpaca.markets/v2/stocks")
 ALPACA_TRADING_URL = os.environ.get("ALPACA_TRADING_URL", "https://paper-api.alpaca.markets/v2")
 
-FINNHUB_API_KEY = os.environ.get("FINNHUB_API_KEY", "d4dvoihr01qmhtc6dpm0d4dvoihr01qmhtc6dpmg")
+FINNHUB_API_KEY = os.environ.get("FINNHUB_API_KEY", "ENTER YOUR API KEY HERE")
 
 
 # ---------------------- SYNC HTTP HELPERS (run in thread pool) ------------------------ #
