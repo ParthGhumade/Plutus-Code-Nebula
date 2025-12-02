@@ -2,7 +2,7 @@
 
 **A lightweight, AI-driven platform designed to demystify the stock market for beginners.**
 
-Plutus focuses on **learning first, not trading**. It provides simple explanations, real-time insights, and smart portfolio guidance to help users understand financial concepts without the pressure of active trading.
+Plutus focuses on **learning first, not trading**. It provides simple explanations, real-time insights, and smart portfolio guidance to help users understand financial concepts without the pressure of active trading. 
 
 ---
 
@@ -33,7 +33,18 @@ Follow these steps to get the project running locally.
 - [Python 3.8+](https://www.python.org/downloads/)
 - [Node.js & npm](https://nodejs.org/)
 
-### 1. Clone the Repository
-```bash
-git clone [https://github.com/ParthGhumade/Plutus-Code-Nebula.git](https://github.com/ParthGhumade/Plutus-Code-Nebula.git)
-cd Plutus-Code-Nebula
+### Running the Application
+
+1.  **Install Python dependencies:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+2.  **Run the application:**
+    This will start both the backend server and the frontend development server.
+    ```bash
+    python run.py
+    ```
+
+3.  **Access the application:**
+    Open your web browser and navigate to [http://localhost:3000](http://localhost:3000).
