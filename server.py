@@ -10,15 +10,18 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field, model_validator
 from typing import List, Optional, Literal, Dict, Any
 from datetime import datetime, timedelta
+from dotenv import load_dotenv
 
 # ---------------------- API KEYS (from environment) ------------------------ #
-DEEPSEEK_API_KEY = os.environ.get("DEEPSEEK_API_KEY", "ENTER YOUR API KEY HERE")
-DEEPSEEK_URL = os.environ.get("DEEPSEEK_URL", "https://api.deepseek.com/v1/chat/completions")
+load_dotenv()
 
-ALPACA_API_KEY = os.environ.get("ALPACA_API_KEY", "ENTER YOUR API KEY HERE")
-ALPACA_SECRET_KEY = os.environ.get("ALPACA_SECRET_KEY", "ENTER YOUR API KEY HERE")
-ALPACA_BASE_URL = os.environ.get("ALPACA_BASE_URL", "https://data.alpaca.markets/v2/stocks")
-ALPACA_TRADING_URL = os.environ.get("ALPACA_TRADING_URL", "https://paper-api.alpaca.markets/v2")
+DEEPSEEK_API_KEY = os.environ.get("DEEPSEEK_API_KEY", "ENTER YOUR API KEY HERE").strip()
+DEEPSEEK_URL = os.environ.get("DEEPSEEK_URL", "https://api.deepseek.com/v1/chat/completions").strip()
+
+ALPACA_API_KEY = os.getenv("ALPACA_API_KEY", "ENTER YOUR API KEY HERE").strip()
+ALPACA_SECRET_KEY = os.getenv("ALPACA_SECRET_KEY", "ENTER YOUR API KEY HERE").strip()
+ALPACA_BASE_URL = os.environ.get("ALPACA_BASE_URL", "https://data.alpaca.markets/v2/stocks").strip()
+ALPACA_TRADING_URL = os.environ.get("ALPACA_TRADING_URL", "https://paper-api.alpaca.markets/v2").strip()
 
 FINNHUB_API_KEY = os.environ.get("FINNHUB_API_KEY", "ENTER YOUR API KEY HERE")
 
