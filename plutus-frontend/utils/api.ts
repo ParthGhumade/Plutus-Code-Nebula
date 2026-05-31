@@ -1,5 +1,9 @@
 // Safe platform detection - works in browser and Capacitor
 const getApiBase = (): string => {
+    if (process.env.NEXT_PUBLIC_API_URL) {
+        return process.env.NEXT_PUBLIC_API_URL;
+    }
+
     try {
         // Only import Capacitor if we're in a native environment
         if (typeof window !== 'undefined' && (window as any).Capacitor) {
